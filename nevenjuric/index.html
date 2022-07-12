@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Pružamo sve računovodstvene usluge za Vaš obrt.">
+        <meta name="keywords" content="Računovodstvo, Knjigovodstvo, knjigovodstveni ured">
+        <meta name="author" content="Neven Jurić">
+        <title>Neven Jurić d.o.o.</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+        <script defer src="nav.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <h1>NEVEN JURIĆ d.o.o.</h1>
+        </header>
+
+        <div id="button">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+
+        <div id="background-nav">
+        <nav id="nav">
+            <ul class="primary-navigation">
+                <li class="links">
+                    <a href="#article1">
+                        O NAMA
+                    </a>
+                </li>
+                <li class="links">
+                    <a href="#article2">
+                        LOKACIJA
+                    </a>
+                </li>
+                <li class="links">
+                    <a href="#article3">
+                        KONTAKT
+                    </a>
+                </li>
+                <li>
+                    <a href="obavijesti.html">
+                        OBAVIJESTI
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="background1">
+            <section class="about container">
+                <article id="article1">
+                    <div id="about1">
+                        <h1>Računovodstvo i knjigovodstvo</h1>
+                        <p>za vođenje poslovnih knjiga malih poduzeća, obrta, OPG-ova i udruga građana</p>
+                    </div>
+                    <div id="about2">
+                        <ul>
+                            <li>
+                                Mi se fokusiramo na vaše računovodstvo, a vi se fokusirajte na razvoj svog poslovanja.
+                            </li>
+                            <li>
+                                U svakom trenutku znate koliko vam duguju kupci, kolike su vam obveze 
+                                prema dobavljačima, koliki su vam prihodi i koliki su vam rashodi.
+                            </li>
+                            <li>
+                                S Vama smo već 27 godina kako bismo Vas pratili i savjetovali kroz vaše poslovanje.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </div>
+        </main>
+
+        <hr id="hr">
+
+        <div class="background2">
+            <section class="lokacija container">
+                <article id="article2">
+                    <h1 id="ar2h1">Gdje se nalazimo</h1>
+                    <p id="ar2p">Sjedište našeg poslovanja je u Kloštru Podravskom, a pružamo usluge klijentima na području od
+                        <ul id="ar2ul">
+                            <li>Koprivnice,</li>
+                            <li>Đurđevca,</li>
+                            <li>Pitomače,</li>
+                            <li>do Bjelovara</li>
+                        </ul>
+                    </p>
+                    <br>
+                    <iframe id="ar2if" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147091.06276924777!2d17.077366080741413!3d45.973113065612566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4767ce3a5d326327%3A0xe00e6571accd6b45!2sUl.%20Ljudevita%20Gaja%2050B%2C%2048362%2C%20Klo%C5%A1tar%20Podravski!5e0!3m2!1sen!2shr!4v1648394120737!5m2!1sen!2shr" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+            </section>
+        </div>
+
+        <hr id="hr">
+
+        <div class="background3">
+            <section class="contact container">
+                <article id="article3">
+                    <h1 id="h1h1">Kontaktirajte nas</h1>
+                    <div id="contain">
+                        <div id="prvi">
+                            <img src="../nevenjuric/images/mail.png">
+                            <h1>E-mailom:</h1>
+                            <button id="emailbtn">Pošalji upit</button>
+                            <p>nevenjurickc@gmail.com</p>
+                        </div>
+                        <div id="drugi">
+                            <img src="../nevenjuric/images/phone.png">
+                            <h1>Telefonom:</h1>
+                            <p>+385 98 249 865</p>
+                            <p>Dostupni smo svakim radnim danom 
+                                <br>od 8:00 do 16:00 sati</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <div id="upit">
+            <h1>Pošaljite nam upit e-mailom!</h1>
+            <form id="form" onsubmit="sendEmail(); reset(); return false;">
+                <h3>Vaše ime:</h3>
+                <input type="text" id="ime" required>
+                <h3>Vaše prezime:</h3>
+                <input type="text" id="prezime" required>
+                <h3>Vaš mail:</h3>
+                <input type="email" id="email" required>
+                <h3>Vaše broj telefona:</h3>
+                <input type="number" id="telefon" maxlength="11">
+                <h3>Upit:</h3>
+                <textarea id="poruka" rows="8" maxlength="550"></textarea>
+                <br>
+                <button type="submit" id="submit">Pošalji</button>
+            </form>
+        </div>
+
+        <script src="../nevenjuric/scrollreveal.min.js"></script>
+        <script src="../nevenjuric/nav.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail() {
+                Email.send({
+                SecureToken : "8cdada1a-1b19-40d4-b666-b52b1617a852",
+                To : 'leo.jurich@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "Upit sa web stranice",
+                Body : "Ime: " + document.getElementById("ime").value 
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Telefon: " + document.getElementById("telefon").value
+                + "<br> Upit: " + document.getElementById("poruka").value
+            }).then(
+            message => alert("Upit uspješno poslan!")
+            )};
+        </script>
+    </body>
+</html>
+
