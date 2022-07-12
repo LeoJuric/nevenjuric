@@ -87,7 +87,7 @@ header {
 }
 
 .background1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../nevenjuric/images/background1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../nevenjuric/images/background12.jpg);
     background-size: cover;
     min-height: 800px;
 }
@@ -136,7 +136,7 @@ header {
 }
 
 .background2 {
-    background-image: url(../nevenjuric/images/background2.jpg);
+    background-image: url(../nevenjuric/images/background22.jpg);
     background-size: cover;
     min-height: 1050px;
 }
@@ -181,7 +181,7 @@ header {
 }
 
 .background3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../nevenjuric/images/background3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../nevenjuric/images/background32.jpg);
     background-size: cover;
     min-height: 750px;
 }
