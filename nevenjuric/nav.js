@@ -7,6 +7,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active')
 });
 
+
 document.querySelector('.hamburger').onclick = dropdown
 function dropdown() {
     if (nav.style.display == 'none') {
@@ -56,3 +57,9 @@ lightbox.addEventListener('click', e => {
     if (e.target !== e.currentTarget) return
     lightbox.classList.remove('active')
 })
+
+const gumb2 = document.getElementById("button1")
+gumb2.addEventListener('click', e => {
+    lightbox.classList.remove('active')
+})
+
