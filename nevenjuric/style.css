@@ -16,14 +16,19 @@
 }
 
 header {
-    background-color: #0B0C10;
-    height: 150px;
+    background: linear-gradient(#1F2833, white);
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-size: 20px;
 }
+
+    header img {
+        padding: 10px 0px 10px 0px;
+        height: 200px;
+    }
 
 #nav {
     background: #1F2833;
@@ -68,10 +73,6 @@ header {
 #button {
     border-top: 0.5px solid #1F2833;
     background-color: #0B0C10;
-}
-
-.primary-navigation {
-    transition: 0.5s ease-out;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -368,7 +369,7 @@ main {
 
 #upit {
     width: 1000px;
-    height: 600px;
+    height: auto;
     background-color: #1F2833;
     display: none;
     text-align: center;
@@ -415,4 +416,53 @@ textarea {
 input {
     font-size: 15px;
     font-weight: bolder;
+}
+
+#zaglavlje {
+    display: flex;
+    flex-direction: row;
+}
+
+    #zaglavlje h1 {
+        width: 95%;
+        padding-left: 50px;
+    }
+
+    #zaglavlje #button2 {
+        width: 5%;
+    }
+
+#hamburger2 {
+    display: block;
+    padding: 10px 0px 10px 0px;
+    cursor: pointer;
+    width: 60px;
+    margin: auto;
+
+}
+
+.bar2 {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: white;
+}
+
+.bar2:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.bar2:nth-child(2) {
+    opacity: 0;
+}
+
+.bar2:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+#button1:hover > #bar21 { 
+    background: dodgerblue;
+    width: 101%;
 }
