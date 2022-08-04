@@ -34,6 +34,8 @@ sr.reveal('#ar2if', {origin: 'right'})
 sr.reveal('#h1h1')
 sr.reveal('#prvi', {origin: 'left'})
 sr.reveal('#drugi', {origin: 'right'})
+sr.reveal('#left', {origin: 'left'})
+sr.reveal('#right', {origin: 'right'})
 
 const lightbox = document.createElement('div')
 lightbox.id = 'lightbox'
