@@ -26,7 +26,7 @@ header {
 }
 
     header img {
-        padding: 10px 0px 10px 0px;
+        padding: 10px 20px 10px 0px;
         height: 200px;
     }
 
@@ -96,7 +96,7 @@ header {
 #about1 {
     margin-top: 50px;
     margin-bottom: 70px;
-    background-color:rgba(0, 0, 0, 0.98);    
+    background-color:rgba(0, 0, 0, 0.6);    
     color: white;
     padding: 50px 50px;
     font-size: 22px;
@@ -109,7 +109,7 @@ header {
     width: 70%;
     margin: auto;
     margin-bottom: 20px;
-    background-color:rgba(0, 0, 0, 0.98);    
+    background-color:rgba(0, 0, 0, 0.6);    
     color: white;
     padding: 20px 40px 40px 40px;
     text-align: left;
@@ -143,7 +143,7 @@ header {
 }
 
 #article2 h1 {
-    background-color: rgba(0, 0, 0, 0.99);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     margin-top: 50px;
     display: flex;
@@ -155,7 +155,7 @@ header {
 }
 
 #article2 p {
-    background-color: rgba(0, 0, 0, 0.99);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     flex-direction: column;
@@ -166,7 +166,7 @@ header {
 }
 
 #article2 ul {
-    background-color: rgba(0, 0, 0, 0.99);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     flex-direction: column;
@@ -187,10 +187,95 @@ header {
     min-height: 750px;
 }
 
+.background4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../nevenjuric/images/background42.jpg);
+    background-size: cover;
+    min-height: 750px;
+}
+
+#left {
+    float: left;
+    clear: both;
+}
+
+#right {
+    float: right;
+    clear: both;
+}
+
+.left {
+    float: left;
+    clear: both;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 10px;
+    color: white;
+    margin-left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+    .left:hover {
+        padding: 20px;
+        color: dodgerblue;
+        transition: 0.3s;
+    }
+
+    .left img {
+        width: 80px;
+        background-color: white;
+        padding: 3px;
+        margin-right: 5px;
+    }
+
+.right {
+    float: right;
+    clear: both;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 10px;
+    color: white;
+    margin-right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+    .right:hover {
+        padding: 20px;
+        color: dodgerblue;
+        transition: 0.5s;
+    }
+
+    .right img {
+        width: 80px;
+        background-color: white;
+        padding: 3px;
+        margin-right: 5px;
+    }
+
+        #srlogo {
+            width: 150px;
+        }
+
+        #pulogo {
+            width: 150px;
+        }
+
+#last {
+    margin-bottom: 10px;
+}
+
 #h1h1 {
-    background-color: rgba(0, 0, 0, 0.99);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     margin-top: 50px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -206,7 +291,7 @@ header {
 
 #prvi {
     width: 45%;
-    background-color: rgba(0, 0, 0, 0.99);
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -229,7 +314,7 @@ header {
 
 #drugi {
     width: 45%;
-    background-color: rgba(0, 0, 0, 0.99);
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -331,7 +416,7 @@ main {
 
 
 
-/* galerija lighbox */
+/* lighbox */
 
 #emailbtn {
     width: auto;
